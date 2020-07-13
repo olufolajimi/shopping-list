@@ -15,6 +15,7 @@
 		302C6D1124B628CB007E3B13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 302C6D0F24B628CB007E3B13 /* LaunchScreen.storyboard */; };
 		302C6D1C24B628CB007E3B13 /* Shopping_ListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302C6D1B24B628CB007E3B13 /* Shopping_ListTests.swift */; };
 		302C6D2724B628CB007E3B13 /* Shopping_ListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302C6D2624B628CB007E3B13 /* Shopping_ListUITests.swift */; };
+		302C6D3524B65DC4007E3B13 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302C6D3424B65DC3007E3B13 /* ItemTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		302C6D2224B628CB007E3B13 /* Shopping ListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Shopping ListUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		302C6D2624B628CB007E3B13 /* Shopping_ListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shopping_ListUITests.swift; sourceTree = "<group>"; };
 		302C6D2824B628CB007E3B13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		302C6D3424B65DC3007E3B13 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				302C6D0624B628C9007E3B13 /* SceneDelegate.swift */,
 				302C6D0824B628C9007E3B13 /* ViewController.swift */,
 				302C6D0A24B628C9007E3B13 /* Main.storyboard */,
+				302C6D3424B65DC3007E3B13 /* ItemTableViewCell.swift */,
 				302C6D0D24B628CB007E3B13 /* Assets.xcassets */,
 				302C6D0F24B628CB007E3B13 /* LaunchScreen.storyboard */,
 				302C6D1224B628CB007E3B13 /* Info.plist */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				302C6D3524B65DC4007E3B13 /* ItemTableViewCell.swift in Sources */,
 				302C6D0924B628C9007E3B13 /* ViewController.swift in Sources */,
 				302C6D0524B628C9007E3B13 /* AppDelegate.swift in Sources */,
 				302C6D0724B628C9007E3B13 /* SceneDelegate.swift in Sources */,
@@ -435,6 +439,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q8593AVGZ6;
 				INFOPLIST_FILE = "Shopping List/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,6 +457,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q8593AVGZ6;
 				INFOPLIST_FILE = "Shopping List/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
