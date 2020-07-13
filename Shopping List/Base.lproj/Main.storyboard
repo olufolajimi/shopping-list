@@ -25,8 +25,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="HN3-7v-ZXz">
-                                <rect key="frame" x="19" y="155" width="376" height="707"/>
+                                <rect key="frame" x="19" y="155" width="376" height="649"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="649" id="rqT-7Z-oDh"/>
+                                </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DataEntryCell" id="pjD-Cu-3kc" customClass="ItemTableViewCell" customModule="Shopping_List" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="376" height="43.666667938232422"/>
@@ -70,17 +73,30 @@
                                     <action selector="addToList:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ii3-J7-pO7"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cCa-U6-lbs">
+                                <rect key="frame" x="20" y="809" width="374" height="53"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <state key="normal" title="Clear List">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="HN3-7v-ZXz" firstAttribute="centerX" secondItem="cCa-U6-lbs" secondAttribute="centerX" id="2yE-QI-B9L"/>
                             <constraint firstItem="ORO-8O-PLu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4H8-LA-Bza"/>
                             <constraint firstItem="HN3-7v-ZXz" firstAttribute="centerX" secondItem="ORO-8O-PLu" secondAttribute="centerX" id="5Pg-L6-5z8"/>
                             <constraint firstItem="ORO-8O-PLu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-44" id="6MT-m3-9j9"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HN3-7v-ZXz" secondAttribute="bottom" id="9uq-d6-WCV"/>
+                            <constraint firstItem="cCa-U6-lbs" firstAttribute="top" secondItem="HN3-7v-ZXz" secondAttribute="bottom" constant="5" id="9uq-d6-WCV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cCa-U6-lbs" secondAttribute="bottom" id="E7A-8y-d5k"/>
+                            <constraint firstItem="cCa-U6-lbs" firstAttribute="top" secondItem="HN3-7v-ZXz" secondAttribute="bottom" constant="5" id="E8s-Ep-MIi"/>
                             <constraint firstItem="Zm3-sW-aJh" firstAttribute="top" secondItem="ORO-8O-PLu" secondAttribute="bottom" constant="8" id="LSS-rU-BMz"/>
                             <constraint firstItem="Zm3-sW-aJh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="18.54173764906318" id="RWK-in-OAQ"/>
                             <constraint firstItem="HN3-7v-ZXz" firstAttribute="top" secondItem="ORO-8O-PLu" secondAttribute="bottom" constant="50" id="SpM-oy-F1s"/>
                             <constraint firstItem="Zm3-sW-aJh" firstAttribute="centerX" secondItem="ORO-8O-PLu" secondAttribute="centerX" constant="-28" id="bYm-O6-r9d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cCa-U6-lbs" secondAttribute="trailing" constant="20" id="dz4-bQ-g7f"/>
                             <constraint firstItem="HN3-7v-ZXz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="19" id="eeb-yO-dMe"/>
                             <constraint firstItem="ORO-8O-PLu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zdd-7N-oCg"/>
                         </constraints>
