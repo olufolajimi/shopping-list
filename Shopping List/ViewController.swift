@@ -12,7 +12,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
 //  MARK: Properties
     @IBOutlet weak var inputTextField: UITextField!
-    var listOfItems: [String] = ["Eggs", "Milk", "Proscuitto"]
+    var listOfItems: [String] = []
     var itemToAdd = ""
     @IBOutlet weak var tableViewItems: UITableView!
     
@@ -42,16 +42,24 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 //  MARK: Actions
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        itemToAdd = textField.text!
-        textField.text = ""
+        inputTextField.resignFirstResponder()
         return true
     }
     
     @IBAction func addToList(_ sender: UIButton) {
-                listOfItems.append(itemToAdd)
-                
-                tableViewItems.dataSource = listOfItems as? UITableViewDataSource
+        itemToAdd = inputTextField.text!
+
+        listOfItems.append(itemToAdd)
+        print("Added " + itemToAdd + " to listOfItems")
+        
+        inputTextField.text = ""
+        
+        tableViewItems.reloadData()
+        
+    }
+    @IBAction func clearList(_ sender: UIButton) {
+        listOfItems = []
+        tableViewItems.reloadData()
     }
 }
 
